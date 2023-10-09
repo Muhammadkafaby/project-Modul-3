@@ -38,6 +38,7 @@
                                 <td>{{ $collection->jumlahKoleksi }}</td>
                                 <td>{{ $collection->created_at }}</td>
                                 <td>{{ $collection->updated_at }}</td>
+                                <!-- 6706220149-Muhammad Kafaby-4604 -->
                             </tr>
                         </tbody>
                     </table>

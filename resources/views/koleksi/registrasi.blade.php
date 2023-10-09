@@ -17,6 +17,7 @@
                 <option value="2">Majalah</option>
                 <option value="3">Cakram Digital</option>
                 <!-- Anda dapat menambahkan lebih banyak opsi sesuai kebutuhan -->
+                <!-- 6706220149_Muhammad Kafaby_4604 -->
             </select>
             <x-input-error :messages="$errors->get('jenisKoleksi')" class="mt-2" />
         </div>

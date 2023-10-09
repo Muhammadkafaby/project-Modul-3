@@ -27,6 +27,7 @@ class User extends Authenticatable
         'birthDate',
         'Agama',
         'jenisKelamin',
+        // 6706220149-Muhammad Kafaby-4604
         
     
     ];

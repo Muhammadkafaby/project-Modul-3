@@ -39,6 +39,8 @@ Route::middleware('auth')->group(function () {
     Route::post('/koleksiStore',[CollectionController::class,'store'])->name('koleksi.storeKoleksi');
     Route::get('/koleksiView/{collection}',[CollectionController::class,'show'])->name('koleksi.infoKoleksi');
 
+    // 6706220149-Muhammad Kafaby-4604
+
 
 
    
