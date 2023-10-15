@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\CollectionController;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -30,12 +31,12 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 
     Route::get('/user',[UserController::class,'index'])->name('user.daftarPengguna');
-    Route::get('/userRegistration',[UserController::class,'create'])->name('user.registrasi');
+    Route::get('/user/create',[UserController::class,'create'])->name('user.registrasi');
     Route::post('/userStore',[UserController::class,'store'])->name('user.storePengguna');
     Route::get('/userView/{user}',[UserController::class,'show'])->name('user.infoPengguna');
 
     Route::get('/koleksi',[CollectionController::class,'index'])->name('koleksi.daftarKoleksi');
-    Route::get('/koleksiTambah',[CollectionController::class,'create'])->name('koleksi.registrasi');
+    Route::get('/koleksi/create',[CollectionController::class,'create'])->name('koleksi.registrasi');
     Route::post('/koleksiStore',[CollectionController::class,'store'])->name('koleksi.storeKoleksi');
     Route::get('/koleksiView/{collection}',[CollectionController::class,'show'])->name('koleksi.infoKoleksi');
 

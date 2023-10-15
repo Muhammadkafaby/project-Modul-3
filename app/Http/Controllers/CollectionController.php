@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\Models\Collection;
 use Illuminate\Http\Request;
+use App\DataTables\CollectionsDataTable;
 
 
 class CollectionController extends Controller
@@ -12,13 +13,10 @@ class CollectionController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(CollectionsDataTable $dataTable)
     {
-        $collections = Collection::all();
-        return view('koleksi.daftarKoleksi', compact('collections'));
-    
-    
-        
+        return $dataTable->render('koleksi.daftarKoleksi');
+      
     }
 
     /**
